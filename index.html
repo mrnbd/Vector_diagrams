@@ -1,0 +1,56 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="Complex.js"></script>
+        <script type="text/javascript" src="FormParser.js"></script>
+        <script type="text/javascript" src="Grid.js"></script>
+        <script type="text/javascript" src="Engine.js"></script>
+        <script type="text/javascript" src="Arrow.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Построение векторной диаграммы токов и напряжений</h1>
+        </header>
+        <canvas id="canv"></canvas>
+        <div id="input">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="switcher"><span class="I selected">I</span> / <span class="U">U</span></th>
+                        <th><span class="p">I</span><sub>1</sub> , кА</th>
+                        <th><span class="p">I</span><sub>2</sub> , кА</th>
+                        <th><span class="p">I</span><sub>0</sub> , кА</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Фаза A</th>
+                        <td><input class="p1 A"/></td>
+                        <td><input class="p2 A"/></td>
+                        <td><input class="p0 A"/></td>
+                    </tr>
+                    <tr>
+                        <th>Фаза B</th>
+                        <td><input class="p1 B"/></td>
+                        <td><input class="p2 B"/></td>
+                        <td><input class="p0 B"/></td>
+                    </tr>
+                    <tr>
+                        <th>Фаза C</th>
+                        <td><input class="p1 C"/></td>
+                        <td><input class="p2 C"/></td>
+                        <td><input class="p0 C"/></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="drawButton">Построить</button>
+            <button id="saveButton">Сохранить</button>
+        </div>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

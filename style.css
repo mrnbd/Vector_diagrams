@@ -1,0 +1,67 @@
+:root {
+    --I-display: inline;
+    --U-display: none
+}
+
+html {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: #263238;
+    text-align: center;
+}
+
+#canv {
+    width: 800px;
+    height: 600px;
+    border: solid black 1px;
+}
+
+#input {
+    margin: 10px;
+}
+
+#input>table {
+    width: 100%;
+    border-spacing: 5px;
+}
+
+#input>table td.invalid {
+    background-color: rgba(255,0,0,0.5);
+}
+
+#input>table td, th {
+    background-color: #37474F;
+    border-radius: 0.5em;
+    padding: 5px;
+}
+
+#input>table>tbody>tr>td>input {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: medium;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+#input>table>tbody>tr>th  {
+    width: 1px;
+    white-space: nowrap;
+}
+
+#input>table>thead>tr>th.switcher>span.selected {
+    color: lime;
+    /* text-decoration: underline; */
+}
+
+#input>button:hover {
+    cursor: pointer;
+}
